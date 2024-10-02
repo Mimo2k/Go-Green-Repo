@@ -1,0 +1,126 @@
+/* Importing Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Resetting margins, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Setting the font family globally */
+}
+
+/* Styling for the body: Background color with a gradient, and padding */
+body {
+  background: linear-gradient(135deg, #1c1c1c, #111222); /* Dark background with a gradient */
+  color: #fff; /* White text color for readability */
+  text-align: center; /* Centering text */
+  padding: 20px; /* Adding padding around the body */
+}
+
+/* Section styling: Padding and structure for each section */
+section {
+  padding: 60px 20px;
+}
+
+/* Container for each section with max width and styling */
+.container {
+  max-width: 1000px;
+  margin: auto; /* Center the container */
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.05); /* Transparent white background */
+  border-radius: 15px; /* Rounded corners for the container */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adding subtle shadow for depth */
+}
+
+/* Styling for section titles */
+.main-title, .section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Flex container to arrange content horizontally */
+.content {
+  display: flex;
+  justify-content: center; /* Center elements */
+  align-items: center;
+  gap: 40px; /* Space between the image and text */
+}
+
+/* Styling for images inside content blocks */
+.image {
+  flex: 1; /* Allow the image to take up available space */
+}
+
+/* Ensuring images are responsive and have rounded corners */
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Styling for text boxes and info sections */
+.text-box, .info {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+/* Line height and margin for paragraphs inside text boxes */
+.text-box p {
+  line-height: 1.6; /* Improve readability */
+  margin-top: 15px;
+}
+
+/* Social media icons container styling */
+.media-icons {
+  margin-top: 30px;
+}
+
+/* Styling for individual social media icons */
+.media-icons a {
+  color: #fff; /* White color for icons */
+  font-size: 1.8em; /* Increase icon size */
+  margin: 0 15px;
+  padding: 10px;
+  transition: color 0.3s, background 0.3s; /* Smooth transition for hover effect */
+  border-radius: 50%; /* Rounded icon background */
+  display: inline-block;
+}
+
+/* Hover effect for social media icons */
+.media-icons a:hover {
+  color: #3b5998; /* Color change on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Background color on hover */
+}
+
+/* Media info (social media links in text form) */
+.media-info {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styling for individual list items */
+.media-info li {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+/* Styling for links in media info */
+.media-info a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover effects for individual icons */
+.icon:hover .fa-facebook { color: #3b5998; }
+.icon:hover .fa-instagram { color: #c13584; }
+.icon:hover .fa-youtube { color: #ff0000; }
+.icon:hover .fa-linkedin { color: #0077b5; }
+
+/* Special styling for text-based X (Twitter) icon */
+.icon:hover {
+  color: #1da1f2;
+}
